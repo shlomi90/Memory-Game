@@ -1,0 +1,152 @@
+/*
+
+ Alon Segev 315870543
+ Shlomi Karavani 203576582
+
+*/
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
+
+
+
+
+body {
+    background-image: url('../memory/Images/mem.jpg');
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-image: './mem.jpg';
+    border: 2px solid #fffef9;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: saturate(180%) blur(10px);
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+
+    color: #333333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.btn-primary {
+
+    border: 2px solid #fffef9;
+    z-index: 1;
+    color: #fffef9;
+    padding: 13px 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none !important;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: auto;
+    transform: translateX(10px);
+    background-color: #fffef9;
+    background: linear-gradient(to right, #fefefe 50%, rgba(0, 0, 0, 0.82) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateX(10px);
+    color: #080000;
+    background-color: rgba(0, 0, 0, 0.84);
+    background-position: left bottom;
+    border: 2px solid #090000;
+}
+
+
+
+#game-container {
+    margin-top: 30px;
+}
+
+#player-heading {
+    color: #007bff;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#score {
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#timer {
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card i {
+    display: none;
+}
+
+.card.flipped i {
+    display: block;
+    font-size: 40px;
+}
+
+.card.matched {
+    background-color: #c2c2c2;
+}
+
+.form-group {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
